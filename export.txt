@@ -1,0 +1,49 @@
+component.js
+    const alert = ({ title, message }) => {};
+    const confirm = ({ title, message, cancelable }) => {};
+
+    export { alert, confirm };
+
+-----------------------
+
+app.js
+    import * as Notificable from '../component';
+
+    Notificable.alert();
+
+app.js
+    import { alert } from '../component';
+
+    alert();
+
+
+=========================================================================
+
+
+
+component.js
+    const alert = ({ title, message }) => {};
+    const confirm = ({ title, message, cancelable }) => {};
+
+    export default alert;
+
+------------------------
+app.js
+    import alert from './component';
+
+    alert();
+
+=========================================================================
+
+
+
+component.js
+    const alert = ({ title, message }) => {};
+    const confirm = ({ title, message, cancelable }) => {};
+
+    export confirm;
+    export default alert;
+
+------------------------
+app.js
+    import alert, { confirm } from './component';
