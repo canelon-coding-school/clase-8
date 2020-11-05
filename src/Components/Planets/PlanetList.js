@@ -14,7 +14,7 @@ class PlanetList extends Component {
   }
 
   getAllPlanets = () => {
-    axios.get('https://swapi.co/api/planets')
+    axios.get('https://swapi.dev/api/planets')
       .then((response) => {
         this.setState({
           planets: response.data.results,
