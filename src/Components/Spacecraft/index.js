@@ -1,19 +1,9 @@
 import React from 'react';
 import Dashboard from '../Dashboard';
+import SpacecraftForm from "./SpacecraftForm";
+import SpacecraftList from "./SpacecraftList";
 
-function SpacecraftList() {
-    return (
-        <p>SpacecraftList</p>
-    )
-}
-
-function SpacecraftForm() {
-    return (
-        <p>SpacecraftForm</p>
-    )
-}
-
-function Spacecraft() {
+const Spacecraft = () => {
   return (
     <Dashboard
       activeSection="spacecraft"
